@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slides</title>
+  <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+
+<style class=slides>body { margin: 0; padding: 0 }
+section {  width: 100vw; height: 100vh; }
+</style>
+
+
+<div class="info">
+<p>Here we are in a sea of green. But try scrolling down, and you’ll see the other slides.
+<p>But slides don’t scroll, they “paginate” or something. You only see one slide at a time. 
+Weirdly enough, the way we’re going to do that is hide all the slides, but then follow that
+up by showing only the first one. That looks like this:
+
+ <pre>
+section { display: none; }
+section:first-child { display: block; }</pre>
+
+<p>Check it out here <a href="8.html">next</a>…
+</div>
+
+<main>
+  <section>first slide</section>
+  <section>yep, the second slide!</section>
+  <section>third slide</section>
+  <section>fourth slide</section>
+  <section>fifth slide</section>
+</main>
+
+
+
+
+</body>
+</html>

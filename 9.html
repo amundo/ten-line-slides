@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slides</title>
+  <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+
+<style class=slides>body { margin: 0; padding: 0 }
+section {  
+  width: 100vw; 
+  height: 100vh; 
+  display: none;
+}
+section:first-child { display: block; }
+</style>
+
+
+<div class="info">
+<p>Okay, we can listen to arrow keys now.</p>
+<p>But what should we <em>do</em> when the user hits a key?</p>
+<p>Finally we’re in a postion to show the heart of this whole business. 
+<p>Let’s start with advancing to the next slide. In order to advance
+to the next slide, we just take the first <code>section</code> in the <code>main</code>
+tag, and move it to the end. That’s surprisingly easy:</p> 
+<pre>
+let main = document.querySelector('main')
+main.appendChild(main.firstElementChild)
+</pre>
+
+<p>That’s it! Go to the <a href="10.html">next</a> page and try hitting the right arrow key.</p>
+</div>
+
+<main>
+  <section>first slide</section>
+  <section>second slide</section>
+  <section>third slide</section>
+  <section>fourth slide</section>
+  <section>fifth slide</section>
+</main>
+
+
+
+
+</body>
+</html>

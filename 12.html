@@ -3,23 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>slides</title>
-<style>
-body { 
-  margin: 0; 
-  padding: 0;
-}
-section {  
-  width: 100vw; 
-  height: 100vh; 
-  display: none;
-}
-section:first-child { 
-  display: block; 
-}
-</style>
+  <link rel="stylesheet" href="tutorial.css">
 </head>
-
 <body>
+
 
 <main>
   <section style=background-color:hsla(115,27%,56%,1)>first slide</section>
@@ -29,6 +16,14 @@ section:first-child {
   <section style=background-color:hsla(338,37%,54%,1)>fifth slide</section>
 </main>
 
+<style class=slides>body { margin: 0; padding: 0 }
+section {  
+  width: 100vw; 
+  height: 100vh; 
+  display: none;
+}
+section:first-child { display: block; }
+</style>
 
 <script class=slides>
 let main = document.querySelector('main')
@@ -42,6 +37,18 @@ document.addEventListener('keyup', keyupEvent => {
   }
 })
 </script>
+
+<div class="info">
+<p>
+That seems too easy to me!
+
+
+<p> There’s a standalone version with none of this commentary mumbo-jumbo at <a href="slides.html">slides.html</a>.
+</div>
+
+
+
+
 
 </body>
 </html>

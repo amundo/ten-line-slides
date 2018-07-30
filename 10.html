@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slides</title>
+  <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+
+
+<main>
+  <section>first slide</section>
+  <section>second slide</section>
+  <section>third slide</section>
+  <section>fourth slide</section>
+  <section>fifth slide</section>
+</main>
+
+<style class=slides>body { margin: 0; padding: 0 }
+section {  
+  width: 100vw; 
+  height: 100vh; 
+  display: none;
+}
+section:first-child { display: block; }
+</style>
+
+<script class=slides>
+let main = document.querySelector('main')
+
+document.addEventListener('keyup', keyupEvent => {
+  if(keyupEvent.key == 'ArrowRight'){
+    main.appendChild(main.firstElementChild)
+  }
+})
+</script>
+
+<div class="info">
+<p>Hey, it works! And it even “wraps”: if you hit the right arrow when you’re on slide 5, 
+you go to slide 1. You might want to open up your console and watch the DOM changing as
+you hit the right arrow key. You’ll see the <code>section</code> tags rotating.
+<p>But why doesn’t the color of the slide change? That because of our CSS, which was defined
+relative to the <em>order</em> of each slide within its parent, using the <code>:nth-child</code>
+pseudo-selector. Since we’re actually changing the order of elements within the DOM, only the
+case where the first child is selected will actually apply. So, any CSS which is specific to a 
+particular element in the DOM shouldn’t be applied via <code>:nth-child</code>. 
+<p>One very simple solution would be to simply inline the background colors in the <code>section</code> 
+tags themselves. The HTML will look something like this: 
+<pre>
+  &lt;section style=background-color:hsla(115,27%,56%,1)&gt;first slide&lt;/section&gt;
+  &lt;section style=background-color:hsla(42,83%,70%,1)&gt;second slide&lt;/section&gt;
+  &lt;section style=background-color:hsla(17,89%,72%,1)&gt;third slide&lt;/section&gt;
+  &lt;section style=background-color:hsla(158,20%,43%,1)&gt;fourth slide&lt;/section&gt;
+  &lt;section style=background-color:hsla(338,37%,54%,1)&gt;fifth slide&lt;/section&gt;
+</pre>
+<p>
+ <a href="11.html">Check it out</a>.
+</div>
+
+
+
+
+
+</body>
+</html>

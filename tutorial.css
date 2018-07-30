@@ -1,15 +1,49 @@
-.info {
-    width: 35%;
-    background: hsl(0, 0%, 100%);
-    border: 1px solid;
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    padding: 1em;
-}
 
 section:nth-child(1) { background-color: hsla(115, 27%, 56%, 1);}
 section:nth-child(2) { background-color: hsla(42, 83%, 70%, 1);}
 section:nth-child(3) { background-color: hsla(17, 89%, 72%, 1);}
 section:nth-child(4) { background-color: hsla(158, 20%, 43%, 1);}
 section:nth-child(5) { background-color: hsla(338, 37%, 54%, 1);}
+
+.info  {
+  position: fixed;
+  border: 1px solid;
+  padding: 1em;
+  bottom: 1em;
+  right: 1em;
+  background: white;
+  max-width: 35%;
+}
+
+script.slides {
+  display:block;
+  width: 35%;
+  background: #222;
+  white-space: pre;
+  color: limegreen;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  padding: 1em;
+}
+
+style.slides {
+  display:block;
+  width: 35%;
+  background: #222;
+  white-space: pre;
+  color: limegreen;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  padding: 1em;
+}
+
+.info pre {
+  display:block;
+  white-space: pre;
+  font-family: monospace;
+  padding: 1em;
+  background: #222;
+  color: limegreen;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>slides</title>
+  <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+
+<style class=slides>body { margin: 0; padding: 0 }
+section {  
+  width: 100vw; 
+  height: 100vh; 
+  display: none;
+}
+section:first-child { display: block; }
+</style>
+
+
+<div class="info">
+<p>And behold, scrolling does nothing, because we’re only looking at the first slide.
+<p>At this point, we face a decision. It’s pretty clear that we’re going to need some
+Javascript, because we have to listen to user behavior. Let’s assume that we want to use
+the left and right arrow keys to page through the slides. Here’s how we can do that:</p>
+
+ <pre>
+document.addEventListener('keyup', keyupEvent => {
+  if(keyupEvent.key == 'ArrowRight' || keyupEvent.key == 'ArrowLeft'){
+    document.querySelector('section').textContent = keyupEvent.key
+  }
+})
+ </pre>
+
+<p>Go to the <a href="9.html">next</a> page and try hitting the left and right arrow keys
+a few times (we’ll also stick our ongoing Javascript in the bottom left corner).</p>
+</div>
+
+<main>
+  <section>first slide</section>
+  <section>second slide</section>
+  <section>third slide</section>
+  <section>fourth slide</section>
+  <section>fifth slide</section>
+</main>
+
+
+
+
+</body>
+</html>
