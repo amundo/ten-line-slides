@@ -41,6 +41,14 @@ main.appendChild(main.firstElementChild)
 </main>
 
 
+<script>
+  document.addEventListener('keyup', keyupEvent => {
+    if(keyupEvent.key == 'ArrowRight' || keyupEvent.key == 'ArrowLeft'){
+      document.querySelector('section').textContent = keyupEvent.key
+    }
+  })
+</script>
+
 
 
 </body>

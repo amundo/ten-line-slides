@@ -4,10 +4,8 @@ Ten lines of Javascript is enough to make a very basic slide library.
 
 Well, ten lines of Javascript and four CSS rules.
 
-Final product
-
-* [start here](1.html)
-* [final product](slides.html)
+* [tutorial](1.html)
+* [demo](slides.html)
 
 
 ```html

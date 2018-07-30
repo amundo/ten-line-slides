@@ -12,7 +12,7 @@ section:nth-child(5) { background-color: hsla(338, 37%, 54%, 1);}
   bottom: 1em;
   right: 1em;
   background: white;
-  max-width: 35%;
+  max-width: 45%;
 }
 
 script.slides {
