@@ -6,8 +6,8 @@ Well, ten lines of Javascript and four CSS rules.
 
 Final product
 
-[start here](1.html)
-[final product](slides.html)
+* [start here](1.html)
+* [final product](slides.html)
 
 
 ```html
