@@ -45,10 +45,13 @@ MDN <a href=https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjac
 <p>We’ll just need to hook up this function to the left arrow:
 
 <pre>
-main.insertAdjacentElement('afterbegin', main.lastElementChild)
+main.insertAdjacentElement(
+  'afterbegin',  // after the main tag begins…
+  main.lastElementChild // …put this element
+)
 </pre>
 
-<a href="12.html">next</a> page and try hitting the right arrow key.</p>
+Now you can go to <a href="12.html">next</a> page and try hitting the right and left arrow keys.</p>
 </div>
 
 

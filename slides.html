@@ -13,20 +13,28 @@ section {
   height: 100vh; 
   display: none;
 }
+h1 {
+  margin: 0;
+}
 section:first-child { 
   display: block; 
 }
+#one   { background-color: hsla(115, 27%, 56%, 1);}
+#two   { background-color: hsla(42, 83%, 70%, 1);}
+#three { background-color: hsla(17, 89%, 72%, 1);}
+#four  { background-color: hsla(158, 20%, 43%, 1);}
+#five  { background-color: hsla(338, 37%, 54%, 1);}
 </style>
 </head>
 
 <body>
 
 <main>
-  <section style=background-color:hsla(115,27%,56%,1)>first slide</section>
-  <section style=background-color:hsla(42,83%,70%,1)>second slide</section>
-  <section style=background-color:hsla(17,89%,72%,1)>third slide</section>
-  <section style=background-color:hsla(158,20%,43%,1)>fourth slide</section>
-  <section style=background-color:hsla(338,37%,54%,1)>fifth slide</section>
+  <section id=one  ><h1>first slide </h1></section>
+  <section id=two  ><h1>second slide</h1></section>
+  <section id=three><h1>third slide </h1></section>
+  <section id=four ><h1>fourth slide</h1></section>
+  <section id=five ><h1>fifth slide </h1></section>
 </main>
 
 
