@@ -1,0 +1,15 @@
+.info {
+    width: 35%;
+    background: hsl(0, 0%, 100%);
+    border: 1px solid;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 1em;
+}
+
+section:nth-child(1) { background-color: hsla(115, 27%, 56%, 1);}
+section:nth-child(2) { background-color: hsla(42, 83%, 70%, 1);}
+section:nth-child(3) { background-color: hsla(17, 89%, 72%, 1);}
+section:nth-child(4) { background-color: hsla(158, 20%, 43%, 1);}
+section:nth-child(5) { background-color: hsla(338, 37%, 54%, 1);}
